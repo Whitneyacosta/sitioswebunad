@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Actividad CSS3</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet"><meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+         <link rel="shortcut icon" href="img/logo.jpg" type="image/png">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/      js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+            $(".accordion-titulo").click(function(e){
+            e.preventDefault();
+            var contenido=$(this).next(".accordion-content");
+                if(contenido.css("display")=="none"){ //open        
+                contenido.slideDown(250);         
+                $(this).addClass("open");
+                }
+                else{        
+                     contenido.slideUp(250);
+                     $(this).removeClass("open");  
+                    }
+                 });
+            });
+        </script>
+    </head>
+    <body>
+       <header>
+            <div class="contenedor">
+                <input type="checkbox" id="menu-bar">
+                <label class="fontawesome-align-justify" for="menu-bar">
+                </label>
+                <ul class="nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="">Lecturas</a>
+                    <ul>
+                        <li><a href="lecturas.html">Introducción a Git y Github</a></li>
+                        <li><a href="Creación.html">Creación de repositorio remoto</a></li>
+                        <li><a href="Estructura.html">Estructura básica de HTML5</a></li>
+                        <li><a href="Propiedades.html">Propiedades de CSS3</a>
+                        <ul>
+                            <li><a href="Menu.html">Creación de menú</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    <li><a href="">Multimedia</a>
+                        <ul>
+                            <li><a href="">Clonación local y remota de Git</a></li>
+                            <li><a href="">Cargue de sitio a Github Pages</a></li>
+                        </ul>
+                        <li><a href="">Actividades</a>
+                        <ul>
+                            <li><a href="Actividadh.html">1. Uso de HTML5</a></li>
+                            <li><a href="Actividadc.html">2. Uso de CSS3</a></li>
+                            <li><a href="Creacions.html">Creación de nuestro sitio web</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Autores</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section id="banner">
+                <div class="container-fluid bg-1 text-center">
+                   <img src="img/logo2.jpg" class="img-responsive img-circle" style="display:inline;" width="215" height="120" class="center">
+                   <br>
+                   <br>
+                </div>
+            </section>
+            <section id="bienvenidos">
+                <div class="contenedor">
+                    <h2 class="margin1">Actividad agregar estilos CSS3</h2>                    
+                </div>
+            </section>
+            <section id="blog">
+                <div class="contenedor1">
+                    <article>
+                        <img src="img/css.png" align="left" class="margin" height="250" width="460">
+                        <div id="container-main">
+                            <div class="accordion-container">
+                              <a href="#" class="accordion-titulo">Actividad2<span class="toggle-icon"></span></a>
+                                <div class="accordion-content">
+                                <img src="img/body.JPG" class="margin" alt=""/>
+                                <p><strong><h3>Uso de estilos CSS3</h3></strong> 
+                                    <p>
+                                    En base a lo visto anteriormente sobre los estilos de CSS3.
+                                    y la estructura básica realizada en HTML5, ponle color a tu página en creación. Con la ayuda del editor CodePen Online.
+                                <br>
+                                <br>
+                            </div>
+                        <br>
+                        <br>
+                         </div>
+                         <p data-height="300" data-theme-id="31565" data-slug-hash="xPbwdd" data-default-tab="result" data-user="Whitney16" data-embed-version="2" data-pen-title="Actividad1" class="codepen">See the Pen <a href="https://codepen.io/Whitney16/pen/xPbwdd/">Actividad1</a> by Whitney (<a href="https://codepen.io/Whitney16">@Whitney16</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                    </article>
+                </div>
+            </section>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer class="container-fluid bg-2 text-center">
+            <div align="left" class="arriba">
+                <a class="twitter-timeline" data-width="350" data-height="320" data-theme="dark" data-link-color="#9266CC" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                </script>
+            </div> 
+            <br>
+            <p>Todos los derechos reservados| Whitney Acosta |&copy. 2017.</p> 
+        </footer>
+    </body>
+</html>

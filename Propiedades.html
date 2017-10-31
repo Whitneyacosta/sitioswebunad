@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Propiedades de CSS3</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet"><meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+         <link rel="shortcut icon" href="/favicon.ico" />
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/      js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+            $(".accordion-titulo").click(function(e){
+            e.preventDefault();
+            var contenido=$(this).next(".accordion-content");
+                if(contenido.css("display")=="none"){ //open        
+                contenido.slideDown(250);         
+                $(this).addClass("open");
+                }
+                else{        
+                     contenido.slideUp(250);
+                     $(this).removeClass("open");  
+                    }
+                 });
+            });
+        </script>
+    </head>
+    <body>
+       <header>
+            <div class="contenedor">
+                <input type="checkbox" id="menu-bar">
+                <label class="fontawesome-align-justify" for="menu-bar">
+                </label>
+                <ul class="nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="">Lecturas</a>
+                    <ul>
+                        <li><a href="lecturas.html">Introducción a Git y Github</a></li>
+                        <li><a href="Creación.html">Creación de repositorio remoto</a></li>
+                        <li><a href="Estructura.html">Estructura básica de HTML5</a></li>
+                        <li><a href="Propiedades.html">Propiedades de CSS3</a>
+                        <ul>
+                            <li><a href="Menu.html">Creación de menú</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Multimedia</a>
+                        <ul>
+                            <li><a href="">Clonación local y remota de Git</a></li>
+                            <li><a href="">Cargue de sitio a Github Pages</a></li>
+                        </ul>
+                        <li><a href="">Actividades</a>
+                        <ul>
+                            <li><a href="Actividadh.html">1. Uso de HTML5</a></li>
+                            <li><a href="Actividadc.html">2. Uso de CSS3</a></li>
+                            <li><a href="Creacions.html">Creación de nuestro sitio web</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Autores</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section id="banner">
+                <div class="container-fluid bg-1 text-center">
+                   <img src="img/logo2.jpg" class="img-responsive img-circle" style="display:inline;" width="215" height="120" class="center">
+                   <br>
+                   <br>
+                </div>
+            </section>
+            <section id="bienvenidos">
+                <div class="contenedor">
+                    <h2 class="margin1">Propiedades de CSS3</h2>                    
+                </div>
+            </section>
+            <section id="blog">
+                <div class="contenedor1">
+                    <article>
+                        <img src="img/css.png" align="left" class="margin" height="250" width="460">
+                        <div id="container-main">
+                            <div class="accordion-container">
+                              <a href="#" class="accordion-titulo">Fuentes - Font Family<span class="toggle-icon"></span></a>
+                                <div class="accordion-content">
+                                <img src="img/font.png" class="margin" alt=""/>
+                                <p><strong><h3>Font-family</h3></strong> bajo esta propiedad ponemos cualquier nombre de familia de fuente que pueda usarse:
+                                    <br>
+                                ► Serif<br>
+                                ► Sans-Serif<br>
+                                ► cursive<br>
+                                ► Fantasy, Monospace<br>
+                                Estas pueden ser aplicables para todos los navegadores.<br>
+                                Para declarar esta propiedad font -family en nuestro archivo css podemos hacerlas así, haciendo una referencia de alguna etiqueta que tengamos sobre el documento de HTML.<br><br></p>
+                                <p><strong>p{font-family:"Verdana", Sans Serif}</strong><br></p>
+                                <p><strong><h3>Font-Style:</h3></strong><br>
+                                    Esta propiedad font-style define que la fuente se muestre en una de tres formas: Normal, <i>Italic</i> u <o>Oblicua</o>. Una hoja de estilo de muestra con declaraciones font-style podria ser así:
+                                    <br>
+                                    <strong>H1 {
+                                        font-style:oblique}</strong>
+                                        p{font-style:normal}
+                                        <br>
+                                        <br>
+                                    </strong>
+                                </p>
+                                <p><strong><h3>Font-Weight</h3></strong>
+                                    La propiedad font-weight se usa para especificar el peso de la fuente.<br>
+                                    Los valores bolder y lighter son relativos al peso de la fuente heredada, mientras que los otros valores sn pesos de fuente absolutos.
+                                    Este peso se efectua  se declara así:<br>
+                                    <strong>H1{font-weight:800}<br>
+                                    P{font-weight:normal}</strong>
+                                </p>
+                                <p><strong><h3>Font-Size</h3></strong>
+                                    La propiedad font-size se usa para especificar el tamaño de la fuente mostrada.<br>
+                                    <strong>H1{ font-size: large }<br>
+                                    P{ font-size: 12pt }</strong>
+                                </p>
+                                <p><strong><h3>Font-Weight</h3></strong>
+                                    La propiedad font puede usarse como una forma rápida para las diferentes propiedades de fuentes, así como para line height. Por ejemplo,<br>
+                                    <h3><strong>Font</strong></h3>
+                                    La propiedad font-size se usa para especificar el tamaño de la fuente mostrada.<br>
+                                    <strong>P { font: italic bold 12pt/14pt Times, serif }</strong>
+                                </p>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="accordion-container">
+                              <a href="#" class="accordion-titulo">Background y Color<span class="toggle-icon"></span></a>
+                                <div class="accordion-content">
+                                <img src="img/back.jpg" class="margin" alt=""/>
+                                <p><strong><h3>Color</h3></strong><br>
+                                    La propiedad color permite especificar el color de un elemento. Vea la sección Unidades para descripciones del valor de colores, Algunos ejemplos de reglas de color:
+                                    <br>
+                                    <strong>H1 { color: blue }
+                                            H2 { color: #000080 }
+                                           
+                                        <br>
+                                        <br>
+                                    </strong>
+                                </p>
+                                <p><strong><h3>Background Color</h3></strong><br>
+                                    La propiedad background-color establece el color del fondo de un elemento. Por ejemplo:
+                                    <br>
+                                    <strong>BODY { background-color: white }
+                                            H1   { background-color: #000080 } 
+                                        <br>
+                                        <br>
+                                    </strong>
+                                </p>
+                                <p><strong><h3>Background Image</h3></strong><br>
+                                    La propiedad background-image establece la imagen de fondo de un elemento. Por ejemplo:
+                                    <br>
+                                    <strong>BODY { background-image: url(/images/foo.gif) }
+                                    P    { background-image: url(http://www.htmlhelp.com/bg.png) } 
+                                    <br>
+                                    <br>
+                                    </strong>
+                                </p>
+                                <p><strong><h3>Background Repeat</h3></strong><br>
+                                    La propiedad background-repeat determina como se repite la background image (imagen de fondo) especificada. El valor repeat-x repetirá la imagen horizontalmente mientras que el valor repeat-y repetirá la imagen verticalmente. Por ejemplo:
+                                    <br>
+                                    <strong>BODY { background: white url(candybar.gif);
+                                    background-repeat: repeat-x }
+                                    <br>
+                                    <br>
+                                    </strong>
+                                </p>
+                                <p><strong><h3>Background position</h3></strong><br>
+                                    La propiedad background-position da la posición inicial de la background image (imagen de fondo) especificada. Esta propiedad solo puede aplicarse a elementos de nivel bloque y a elementos reemplazados.
+                                    <br>
+                                    <strong>
+                                        ► Palabras clave horizontales (left, center, right)<br>
+                                        - right top = top right = 100% 0%<br>
+                                        - left = left center = center left = 0% 50%<br>
+                                        ► Palabras clave horizontales verticales (top, center, bottom)
+                                    <br>
+                                    <br>
+                                    </strong>
+                                </p>
+                                <p><strong><h3>Background</h3></strong><br>
+                                    La propiedad background es una forma rápida para las propiedades más específicas relacionadas con background. Algunos ejemplos de declaraciones de background:
+                                    <br>
+                                    <strong>
+                                        ► BODY       { background: white url(http://www.htmlhelp.com/foo.gif) }<br>
+                                        ► BLOCKQUOTE { background: #7fffd4 }<br>
+                                        ► P          { background: url(../fondos/peon.png) #f0f8ff fixed }
+                                    <br>
+                                    <br>
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="accordion-container">
+                              <a href="#" class="accordion-titulo">Propiedades de texto<span class="toggle-icon"></span></a>
+                                <div class="accordion-content">
+                                <img src="img/dg-web.JPG" class="margin" alt=""/>
+                                <p><strong><h3>Line Height</h3></strong><br>
+                                    La propiedad line-height aceptará un valor para controlar el espacio entre líneas base de texto. Si el valor es un número, la altura de línea se calcula multiplicando el tamaño de fuente del elemento por el número.
+                                    <br>
+                                    <strong>
+                                        P { line-height: 200% }
+                                    <br>
+                                    <br>
+                                    </strong>
+                                </p>
+                                <p><strong><h3>Text Indentation</h3></strong><br>
+                                    La propiedad text-indent puede aplicarse a elementos de nivel bloque (P, H1, etc.) para definir la cantidad de sangría que debería aplicarse a la primera línea. El valor debe ser una longitud o un porcentaje; los porcentajes se refieren al ancho del elemento padre. Un uso común para text-indent sería dar sangría a un párrafo:
+                                    <br>
+                                    <strong>
+                                       P { text-indent: 5em }<br> 
+                                    <br>
+                                    <br>
+                                    </strong>
+                                </p>
+                                <p><strong><h3>Text Alignment</h3></strong><br>
+                                    La propiedad text-align puede aplicarse a elementos de nivel bloque (P, H1, etc.) para dar la alineación del texto del elemento. Esta propiedad es similar en función al atributo ALIGN de HTML en párrafos, encabezados y divisiones.
+                                    <br>
+                                    <strong>
+                                       H1          { text-align: center }
+                                       P.diario { text-align: justify }<br> 
+                                    <br>
+                                    <br>
+                                    </strong>
+                                </p>
+                                <p><strong><h3>Text Transformation</h3></strong><br>
+                                    La propiedad text-transform permite que el texto se transforme por alguna de cuatro propiedades:
+                                    <br>
+                                    ► Capitalize: escribe en mayúsculas el primer carácter de cada palabra).<br>
+                                    ► UPPERCASE: (escribe en mayúsculas todos los caracteres de cada palabra).<br>
+                                    ► lowercase: (usa letras pequeñas para todos los caracteres de cada palabra).<br>
+                                    ► none (valor inicial).<br>
+                                    <strong>
+                                       H1 { text-transform: uppercase }
+                                       H2 { text-transform: capitalize }<br> 
+                                    <br>
+                                    <br>
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="accordion-container">
+                              <a href="#" class="accordion-titulo">Propiedades de clasificación<span class="toggle-icon"></span></a>
+                                <div class="accordion-content">
+                                <img src="img/body.JPG" class="margin" alt=""/>
+                                <p><strong><h3>List Style</h3></strong><br>
+                                    La propiedad list-style property es una forma rápida de las propiedades list-style-type, list-style-position y list-style-image.<br>
+                                    Ejemplos:<br>
+                                    <strong>
+                                       LI.cuadrado { list-style: square inside }
+                                       UL.simple  { list-style: none }<br> 
+                                    <br>
+                                    <br>
+                                    </strong>
+                                </p>
+                                <p><strong><h3>List Style Image</h3></strong><br>
+                                    La propiedad list-style-image especifica la imagen que se usará como marcador de ítems de lista cuando se active la carga de imágenes, reemplazando al marcador especificado en la propiedad list-style-type.<br>
+                                    Ejemplos:<br>
+                                    <strong>
+                                       UL.marca { list-style-image: url(/LI-marcadores/visto.gif) }
+                                       UL LI.x { list-style-image: url(x.png) }<br>
+                                    <br>
+                                    <br>
+                                    </strong>
+                                </p>
+                                <p><strong><h3>Display</h3></strong><br>
+                                    La propiedad list-style-image especifica la imagen que se usará como marcador de ítems de lista cuando se active la carga de imágenes, reemplazando al marcador especificado en la propiedad list-style-type.<br>
+                                    Ejemplos:<br>
+                                    <strong>
+                                       ► block: (un salto de línea antes y después del elemento)<br>
+                                       ► inline: (ningún salto de línea antes ni después del elemento)<br>
+                                       ► list-item: (igual que block, salvo que se agrega un marcador de ítems de lista)<br>
+                                    <br>
+                                    <br>
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="accordion-container">
+                              <a href="#" class="accordion-titulo">Propiedades de cuadros<span class="toggle-icon"></span></a>
+                                <div class="accordion-content">
+                                <img src="img/float.png" class="margin" alt=""/>
+                                <p><strong><h3>Float</h3></strong><br>
+                                    La propiedad clear especifica si un elemento permite elementos flotantes a sus lados. Un valor left mueve el elemento debajo de cualquier elemento flotante a su izquierda; right actúa en forma similar para elementos flotantes a la derecha. Otros valores son none, que es el valor inicial, y both, que mueve el elemento debajo de los elementos flotantes a ambos lados. Esta propiedad es similar en función a <BR CLEAR=left|right|all|none><br>
+                                    <br>
+                                    <br>
+                                    </strong>
+                                </p>
+                                <p><strong><h3>width</h3></strong><br>
+                                    La propiedad float permite ajustar texto alrededor de un elemento. Esto es idéntico en propósito a ALIGN=left y ALIGN=right para el elemento IMG de HTML 3.2, pero CSS1 permite que todos los elementos "floten," no solo las imágenes y tablas que permite HTML.
+                                    <br>
+                                    <br>
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                         </div>
+                         <p data-height="447" data-theme-id="31565" data-slug-hash="pWQwMe" data-default-tab="css" data-user="Whitney16" data-embed-version="2" data-pen-title="pWQwMe" class="codepen">See the Pen <a href="https://codepen.io/Whitney16/pen/pWQwMe/">pWQwMe</a> by Whitney (<a href="https://codepen.io/Whitney16">@Whitney16</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                    </article>
+                </div>
+            </section>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer class="container-fluid bg-2 text-center">
+            <div align="left" class="arriba">
+                <a class="twitter-timeline" data-width="350" data-height="320" data-theme="dark" data-link-color="#9266CC" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                </script>
+            </div> 
+            <br>
+            <p>Todos los derechos reservados| Whitney Acosta |&copy. 2017.</p> 
+        </footer>
+    </body>
+</html>

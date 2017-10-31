@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Estructura básica de HTML5</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet"><meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+         <link rel="shortcut icon" href="/favicon.ico" />
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/      js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+            $(".accordion-titulo").click(function(e){
+            e.preventDefault();
+            var contenido=$(this).next(".accordion-content");
+                if(contenido.css("display")=="none"){ //open        
+                contenido.slideDown(250);         
+                $(this).addClass("open");
+                }
+                else{        
+                     contenido.slideUp(250);
+                     $(this).removeClass("open");  
+                    }
+                 });
+            });
+        </script>
+    </head>
+    <body>
+       <header>
+            <div class="contenedor">
+                <input type="checkbox" id="menu-bar">
+                <label class="fontawesome-align-justify" for="menu-bar">
+                </label>
+                <ul class="nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="">Lecturas</a>
+                    <ul>
+                        <li><a href="lecturas.html">Introducción a Git y Github</a></li>
+                        <li><a href="Creación.html">Creación de repositorio remoto</a></li>
+                        <li><a href="Estructura.html">Estructura básica de HTML5</a></li>
+                        <li><a href="Propiedades.html">Propiedades de CSS3</a>
+                        <ul>
+                            <li><a href="Menu.html">Creación de menú</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Multimedia</a>
+                        <ul>
+                            <li><a href="">Clonación local y remota de Git</a></li>
+                            <li><a href="">Cargue de sitio a Github Pages</a></li>
+                        </ul>
+                        <li><a href="">Actividades</a>
+                        <ul>
+                            <li><a href="Actividadh.html">1. Uso de HTML5</a></li>
+                            <li><a href="Actividadc.html">2. Uso de CSS3</a></li>
+                            <li><a href="Creacions.html">Creación de nuestro sitio web</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Autores</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section id="banner">
+                <div class="container-fluid bg-1 text-center">
+                   <img src="img/logo2.jpg" class="img-responsive img-circle" style="display:inline;" width="215" height="120" class="center">
+                   <br>
+                   <br>
+                </div>
+            </section>
+            <section id="bienvenidos">
+                <div class="contenedor">
+                    <h2 class="margin1">Estructura básica de HTML5</h2>        
+                </div>
+            </section>
+            <section id="blog">
+                <div class="contenedor1">
+                    <article>
+                        <img src="img/html.png" align="left" class="margin" height="250" width="460">
+                        <div id="container-main">
+                            <div class="accordion-container">
+                              <a href="#" class="accordion-titulo">Html5<span class="toggle-icon"></span></a>
+                                <div class="accordion-content">
+                                <img src="img/body.JPG" class="margin" alt=""/>
+                                <p><strong><h3>ESTRUCTURA BÁSICA</h3></strong> La estructura basica para realizar un sitio web en HTML5, el cual se comprende
+                                como un lenguaje de hipertexto  muy facil de hacer ya que HTML5 tiende a seer una estructura muy 
+                                semantica y es este el mejor de todos.
+                                Sus etiquetas son muy basicas por eso vamos a ver como es una estructura básica de un documento de HTML5.
+                                Este lenguaje tiende a hacerse mas simple y humano al escribir el codigo.
+                                La etiqueta Lang es un atributo para el idioma del sitio.
+                                <p><strong>
+                                <pre class="brush: xml; title: ; notranslate" title="">&lt;!DOCTYPE html&gt;
+                                &lt;html lang=&quot;es&quot;&gt;
+                                &lt;head&gt; </pre>  
+                                </strong><br>     
+                            </div>
+                            <div class="accordion-container">
+                              <a href="#" class="accordion-titulo">Etiquetas meta y link<span class="toggle-icon"></span></a>
+                                <div class="accordion-content">
+                                <img src="img/meta.JPG" class="margin" alt=""/>
+                                <p><strong><h3>ETIQUETAS META</h3></strong><br>
+                                    Ahora veremos la etiqueta META, donde esta actua hacia el navegador en tipo
+                                    de codificación en el cual se esta documentando el "Documento" HTML5, para ello existen
+                                    varios tipos de codificación pero para español el cual nos permitira caracteres especiales
+                                    como la letra "ñ" y demás usaremos UTF-8.
+                                    <strong><pre class="brush: xml; title: ; notranslate" title="">&lt;title&gt;Mi primer sitio web&lt;/title&gt;
+                                    &lt;meta charset=&quot;utf-8&quot; /&gt;</pre></strong>
+                                    </p>
+                                    <br>
+                                    <p><strong><h3><center>ETIQUETAS LINK</center></h3></strong><br>
+                                    <img src="img/seo.jpg" class="margin" alt=""/>
+                                    <p>
+                                    Las etiquetas link las usaremos y se usan para enlazar los estilos de CSS, los iconos que van el 
+                                    titulo de la página, al igual que el atributo de REL. También son usados para cuestiones de SEO.
+                                    </p>
+                                    <strong><pre class="brush: xml; title: ; notranslate" title="">&lt;link rel=&quot;stylesheet&quot; href=&quot;estilos.css&quot; /&gt;
+                                    &lt;link rel=&quot;shortcut icon&quot; href=&quot;/favicon.ico&quot; /&gt;</pre></strong>
+                                    </p>
+                                </div>
+                            <div class="accordion-container">
+                              <a href="#" class="accordion-titulo">Body<span class="toggle-icon"></span></a>
+                                <div class="accordion-content">
+                                <img src="img/body.JPG" class="margin" alt=""/>
+                                <p><strong><h3>BODY</h3></strong><br>
+                                    <p>La etiqueta BODY la usaremos para conformar como bien decimos en español el cuerpo
+                                    de la página.
+                                    La etiqueta HEADER es la cabecera donde va el nombre del sitio, su logo y
+                                    descripción de la pagina web. Para el uso del titulo es recomendado la etiqueta 
+                                    h1 ya que es el tamaño más grande de este hipertexto.
+                                    </p>
+                                <strong><pre class="brush: xml; title: ; notranslate" title="">&lt;body&gt;
+                                &lt;header&gt;
+                                &lt;h1&gt;Mi sitio web&lt;/h1&gt;
+                                &lt;p&gt;Estoy usando etiquetas básicas de HTML5&lt;/p&gt;
+                                &lt;/header&gt;</pre></strong>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="accordion-container">
+                              <a href="#" class="accordion-titulo">Section y Aside<span class="toggle-icon"></span></a>
+                                <div class="accordion-content">
+                                <img src="img/section.png" class="margin" alt=""/>
+                                <p><strong><h3>SECTION</h3></strong><br>
+                                <p>La etiqueta SECTION con el uso de la etiqueta h2
+                                    de titulo y el contenido en etiquetas P.
+                                    Esta etiqueta es usada para secciones cortas o secciones de imagenes o contenidos que se deseen organizar.
+                                    la etiqueta P la usamos para parrafos.
+                                    y Articlees una etiqueta para articulos o post.
+                                </p>
+                                <strong><pre class="brush: xml; title: ; notranslate" title="">&lt;section&gt;
+                                &lt;article&gt;
+                                &lt;h2&gt;Titilo de contenido&lt;h2&gt;
+                                &lt;p&gt; Contenido (ademas de imagenes, citas, videos etc.) &lt;/p&gt;
+                                &lt;/article&gt;
+                                &lt;/section&gt;</pre></strong>
+                                <br>
+                                <img src="img/aside.png" class="margin" alt=""/>
+                                <p><strong><h3>ASIDE</h3></strong><br>
+                                    <p>La etiqueta ASIDE, es prolongadamente usada como barra lateral y es muy facil de implementar
+                                    con h3 de titulo y P de contenido dentro de ella.
+                                    <strong><pre class="brush: xml; title: ; notranslate" title="">&lt;aside&gt;
+                                    &lt;h3&gt;Titulo de contenido&lt;/h3&gt;
+                                    &lt;p&gt;contenido&lt;/p&gt;
+                                    &lt;/aside&gt;</pre></strong>
+                                    <br>
+                                    <br>
+                                </div>
+                            <div class="accordion-container">
+                              <a href="#" class="accordion-titulo">Footer<span class="toggle-icon"></span></a>
+                                <div class="accordion-content">
+                                <img src="img/float.png" class="margin" alt=""/>
+                                <p><strong><h3>FOOTER</h3></strong><br>
+                                    <P>y por último la etiqueta Footer la cual usamos como el pie de
+                                    página.
+                                </p>
+                                <strong><pre class="brush: xml; title: ; notranslate" title="">&lt;footer&gt; &lt;/span&gt;
+                                &lt;p style=&quot;padding-left: 30px;&quot;&gt;&lt;span style=&quot;color: #333399;&quot;&gt; Creado por mi el 2017&lt;/span&gt;&lt;/p&gt;
+                                &lt;span style=&quot;color: #333399;&quot;&gt;&lt;/footer&gt;</pre></strong>
+                                <br>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <p data-height="300" data-theme-id="31565" data-slug-hash="zEXJyw" data-default-tab="html,result" data-user="Whitney16" data-embed-version="2" data-pen-title="zEXJyw" class="codepen">See the Pen <a href="https://codepen.io/Whitney16/pen/zEXJyw/">zEXJyw</a> by Whitney (<a href="https://codepen.io/Whitney16">@Whitney16</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                    </article>
+                </div>
+            </section>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer class="container-fluid bg-2 text-center">
+            <div align="left" class="arriba">
+                <a class="twitter-timeline" data-width="350" data-height="320" data-theme="dark" data-link-color="#9266CC" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                </script>
+            </div> 
+            <br>
+            <p>Todos los derechos reservados| Whitney Acosta |&copy. 2017.</p> 
+        </footer>
+    </body>
+</html>

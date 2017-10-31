@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creación de repositorio remoto en Ubuntu</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet"><meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+         <link rel="shortcut icon" href="/favicon.ico" />
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/      js/bootstrap.min.js"></script>
+    </head>
+    <body>
+       <header>
+            <div class="contenedor">
+                <input type="checkbox" id="menu-bar">
+                <label class="fontawesome-align-justify" for="menu-bar">
+                </label>
+                <ul class="nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="">Lecturas</a>
+                    <ul>
+                        <li><a href="lecturas.html">Introducción a Git y Github</a></li>
+                        <li><a href="Creacion.html">Creación de repositorio remoto</a></li>
+                        <li><a href="Estructura.html">Estructura básica de HTML5</a></li>
+                        <li><a href="">Propiedades de CSS3</a>
+                        <ul>
+                            <li><a href="">Creación de menú</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    <li><a href="">Multimedia</a>
+                        <ul>
+                            <li><a href="">Clonación local y remota de Git</a></li>
+                            <li><a href="">Cargue de sitio a Github Pages</a></li>
+                        </ul>
+                        <li><a href="#">Actividades</a>
+                        <ul>
+                            <li><a href="Actividadh.html">1. Uso de HTML5</a></li>
+                            <li><a href="Actividadc.html">2. Uso de CSS3</a></li>
+                            <li><a href="Creacions.html">Creación de nuestro sitio web</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Autores</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section id="banner">
+                <div class="container-fluid bg-1 text-center">
+                   <img src="img/logo2.jpg" class="img-responsive img-circle" style="display:inline;" width="215" height="120" class="center">
+                   <br>
+                   <br>
+                </div>
+            </section>
+            <section id="bienvenidos">
+                <div class="contenedor">
+                    <h2 class="margin1">Creación de repositorio remoto en Ubuntu</h2>                    
+                </div>
+            </section>
+            <div class="container" style="margin-top:15px;">
+    <div class="row form-group">
+        <div class="col-xs-12 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-image">
+                    <img src="img/terminal.JPG" class="panel-image-preview" />
+                    <label for="toggle-1"></label>
+                </div>
+                <input type="checkbox" id="toggle-1" class="panel-image-toggle">
+                <div class="panel-body">
+                    <h4>Instalación de git</h4>
+                    <p>Lo primero que debemos hacer es crear una cuenta en https://github.com/ y como segundo  abrir el terminal de nuestro sistema operativo ubuntu, y seguidamente ejecutar el comando:
+                        <center><strong><em>Sudo apt install git-core</em></strong></center>
+                        Una vez se hallan descargado los paquetes de la instalación ejecutan el siguiente comando para verificar su versión y que se halla instalado:
+                        <center><strong><em>git --version</em></strong></center</p>
+                </div>
+                <div class="panel-footer text-center">
+                    <a href="https://twitter.com/UniversidadUNAD?"><span class="glyphicon glyphicon-download"></span></a>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-image hide-panel-body">
+                    <img src="img/conf.JPG" class="panel-image-preview" />
+                    <label for="toggle-2"></label>
+                </div>
+                <input type="checkbox" id="toggle-2" class="panel-image-toggle">
+                <div class="panel-body">
+                    <h4>Configuración de git en Ubuntu</h4>
+                    <p>Despues de la instalación configuraremos la cuenta con los comandos:
+                        <center><strong><em>git config --global user.name "Whitney"<br>
+                        git config --global user.email "wlacostarobelto@misena.edu.co"</em></strong></center</p></p>
+                </div>
+                <div class="panel-footer text-center">
+                   <a href="https://twitter.com/UniversidadUNAD?"><span class="glyphicon glyphicon-download"></span></a>    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row form-group">
+        <div class="col-xs-12 col-md-6">
+            <div class="panel panel-default">
+                
+                <div class="panel-image hide-panel-body">
+                    <img src="img/clone.JPG" class="panel-image-preview" />
+                    <label for="toggle-3"></label>
+                </div>
+                <input type="checkbox" id="toggle-3" class="panel-image-toggle">
+                <div class="panel-body">
+                    <h4>Clonación de repositorio</h4>
+                    <p>Una vez creada la cuenta y un repositorio en  https://github.com/ haremos la
+                    clonación en el equipo con sistema operativo Ubuntu.<br>
+                    Ejecutamos el comando:
+                    <center><strong><em>git clone:(Más la URL de nuestro repositorio)//github.com/whitneyacosta/whitney_pruebas<p></center></strong></em></p>
+                </div>
+                <div class="panel-footer text-center">
+                    <a href="https://twitter.com/UniversidadUNAD?"><span class="glyphicon glyphicon-download"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-image">
+                    <img src="img/gui.JPG" class="panel-image-preview" />
+                    <label for="toggle-4"></label>
+                </div>
+                <input type="checkbox" id="toggle-4" checked class="panel-image-toggle">
+                <div class="panel-body">
+                    <h4>Instalación de Gui</h4>
+                    <p>Una vez hecha la clonación del repositorio procedemos con la instalación de Gui, el cual nos permitira hacer cargues de commit es decir el cargue de los documentos de una página web o los documentos que necesitemos bajo cualquier lenguaje de programación.
+                        <center><strong><em>git gui</center></strong></em></p>
+                </div>
+                <div class="panel-footer text-center">
+                    <a href="https://twitter.com/UniversidadUNAD?"><span class="glyphicon glyphicon-download"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <footer class="container-fluid bg-2 text-center">
+            <div align="left" class="arriba">
+                <a class="twitter-timeline" data-width="350" data-height="320" data-theme="dark" data-link-color="#9266CC" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                </script>
+            </div> 
+            <br>
+            <p>Todos los derechos reservados| Whitney Acosta |&copy. 2017.</p> 
+        </footer>
+    </body>
+</html>
